@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generator="Robot 4.1 (Jython 2.7.2 on java16.0.2)" schemaversion="2" generated="20231027 02:26:39.606">
+<robot rpa="false" generator="Robot 4.1 (Jython 2.7.2 on java16.0.2)" schemaversion="2" generated="20231028 20:31:07.996">
 <suite source="C:\Users\Jonathan\robotframework\optimy\src\test\robotframework\acceptance" name="Acceptance" id="s1">
 <suite source="C:\Users\Jonathan\robotframework\optimy\src\test\robotframework\acceptance\robot.robot" name="Robot" id="s1-s1">
 <test name="Open Application" id="s1-s1-t1">
@@ -7,16 +7,16 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the given ``url``.</doc>
-<msg level="INFO" timestamp="20231027 02:26:46.498">browserName: Chrome</msg>
-<msg level="INFO" timestamp="20231027 02:26:46.499">Opening browser 'chrome'</msg>
-<status endtime="20231027 02:26:46.502" starttime="20231027 02:26:40.520" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:16.900">browserName: Chrome</msg>
+<msg level="INFO" timestamp="20231028 20:31:16.901">Opening browser 'chrome'</msg>
+<status endtime="20231028 20:31:16.903" starttime="20231028 20:31:08.852" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Maximize Browser Window">
 <doc>Maximizes current browser window.</doc>
-<status endtime="20231027 02:26:46.627" starttime="20231027 02:26:46.504" status="PASS"/>
+<status endtime="20231028 20:31:17.034" starttime="20231028 20:31:16.904" status="PASS"/>
 </kw>
 <doc>Open the application using the specified browser</doc>
-<status endtime="20231027 02:26:46.629" starttime="20231027 02:26:40.510" status="PASS"/>
+<status endtime="20231028 20:31:17.036" starttime="20231028 20:31:08.847" status="PASS"/>
 </test>
 <test name="Wait and click Accept Cookies" id="s1-s1-t2">
 <kw library="BuiltIn" name="Wait Until Keyword Succeeds">
@@ -28,21 +28,27 @@
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:#cookie-allow-all-button</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:26:46.730">Verifying element 'css:#cookie-allow-all-button' is visible.</msg>
-<status endtime="20231027 02:26:46.732" starttime="20231027 02:26:46.647" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:17.121">Verifying element 'css:#cookie-allow-all-button' is visible.</msg>
+<status endtime="20231028 20:31:17.122" starttime="20231028 20:31:17.049" status="PASS"/>
 </kw>
-<status endtime="20231027 02:26:46.734" starttime="20231027 02:26:46.641" status="PASS"/>
+<status endtime="20231028 20:31:17.123" starttime="20231028 20:31:17.044" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:#cookie-allow-all-button</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:26:46.825">Clicking element 'css:#cookie-allow-all-button'.</msg>
-<status endtime="20231027 02:26:46.825" starttime="20231027 02:26:46.735" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:17.194">Clicking element 'css:#cookie-allow-all-button'.</msg>
+<status endtime="20231028 20:31:17.195" starttime="20231028 20:31:17.123" status="PASS"/>
 </kw>
 <doc>Wait and click Accept Cookies</doc>
-<status endtime="20231027 02:26:46.827" starttime="20231027 02:26:46.634" status="PASS"/>
+<status endtime="20231028 20:31:17.198" starttime="20231028 20:31:17.040" status="PASS"/>
 </test>
 <test name="Click Login button" id="s1-s1-t3">
+<kw library="BuiltIn" name="Sleep">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg level="INFO" timestamp="20231028 20:31:19.220">Slept 2 seconds</msg>
+<status endtime="20231028 20:31:19.222" starttime="20231028 20:31:17.208" status="PASS"/>
+</kw>
 <kw library="BuiltIn" name="Wait Until Keyword Succeeds">
 <arg>10s</arg>
 <arg>1s</arg>
@@ -52,21 +58,27 @@
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:body &gt; div.page-wrapper.min-vh-100.d-flex.flex-column &gt; header &gt; div &gt; div &gt; a</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:26:46.895">Verifying element 'css:body &gt; div.page-wrapper.min-vh-100.d-flex.flex-column &gt; header &gt; div &gt; div &gt; a' is visible.</msg>
-<status endtime="20231027 02:26:46.896" starttime="20231027 02:26:46.845" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:19.265">Verifying element 'css:body &gt; div.page-wrapper.min-vh-100.d-flex.flex-column &gt; header &gt; div &gt; div &gt; a' is visible.</msg>
+<status endtime="20231028 20:31:19.265" starttime="20231028 20:31:19.227" status="PASS"/>
 </kw>
-<status endtime="20231027 02:26:46.897" starttime="20231027 02:26:46.838" status="PASS"/>
+<status endtime="20231028 20:31:19.266" starttime="20231028 20:31:19.223" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:body &gt; div.page-wrapper.min-vh-100.d-flex.flex-column &gt; header &gt; div &gt; div &gt; a</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:26:50.526">Clicking element 'css:body &gt; div.page-wrapper.min-vh-100.d-flex.flex-column &gt; header &gt; div &gt; div &gt; a'.</msg>
-<status endtime="20231027 02:26:50.528" starttime="20231027 02:26:46.898" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:20.657">Clicking element 'css:body &gt; div.page-wrapper.min-vh-100.d-flex.flex-column &gt; header &gt; div &gt; div &gt; a'.</msg>
+<status endtime="20231028 20:31:20.659" starttime="20231028 20:31:19.267" status="PASS"/>
 </kw>
 <doc>Click Login button</doc>
-<status endtime="20231027 02:26:50.530" starttime="20231027 02:26:46.834" status="PASS"/>
+<status endtime="20231028 20:31:20.660" starttime="20231028 20:31:17.203" status="PASS"/>
 </test>
 <test name="Input e-mail address" id="s1-s1-t4">
+<kw library="BuiltIn" name="Sleep">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg level="INFO" timestamp="20231028 20:31:22.675">Slept 2 seconds</msg>
+<status endtime="20231028 20:31:22.677" starttime="20231028 20:31:20.666" status="PASS"/>
+</kw>
 <kw library="BuiltIn" name="Wait Until Keyword Succeeds">
 <arg>10s</arg>
 <arg>1s</arg>
@@ -76,20 +88,20 @@
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:#login-email</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:26:50.607">Verifying element 'css:#login-email' is visible.</msg>
-<status endtime="20231027 02:26:50.608" starttime="20231027 02:26:50.547" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:22.715">Verifying element 'css:#login-email' is visible.</msg>
+<status endtime="20231028 20:31:22.716" starttime="20231028 20:31:22.682" status="PASS"/>
 </kw>
-<status endtime="20231027 02:26:50.609" starttime="20231027 02:26:50.540" status="PASS"/>
+<status endtime="20231028 20:31:22.716" starttime="20231028 20:31:22.678" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Input Text">
 <arg>css:#login-email</arg>
 <arg>optimyautomationtester@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:26:50.792">Typing text 'optimyautomationtester@gmail.com' into text field 'css:#login-email'</msg>
-<status endtime="20231027 02:26:50.793" starttime="20231027 02:26:50.610" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:22.869">Typing text 'optimyautomationtester@gmail.com' into text field 'css:#login-email'</msg>
+<status endtime="20231028 20:31:22.870" starttime="20231028 20:31:22.717" status="PASS"/>
 </kw>
 <doc>Input e-mail address</doc>
-<status endtime="20231027 02:26:50.795" starttime="20231027 02:26:50.536" status="PASS"/>
+<status endtime="20231028 20:31:22.871" starttime="20231028 20:31:20.663" status="PASS"/>
 </test>
 <test name="Input password" id="s1-s1-t5">
 <kw library="BuiltIn" name="Wait Until Keyword Succeeds">
@@ -101,26 +113,26 @@
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:#login-password</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:26:50.861">Verifying element 'css:#login-password' is visible.</msg>
-<status endtime="20231027 02:26:50.862" starttime="20231027 02:26:50.810" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:22.920">Verifying element 'css:#login-password' is visible.</msg>
+<status endtime="20231028 20:31:22.921" starttime="20231028 20:31:22.883" status="PASS"/>
 </kw>
-<status endtime="20231027 02:26:50.863" starttime="20231027 02:26:50.804" status="PASS"/>
+<status endtime="20231028 20:31:22.921" starttime="20231028 20:31:22.878" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Input Password">
 <arg>css:#login-password</arg>
 <arg>yRMhojb7</arg>
 <doc>Types the given ``text`` into the password field identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:26:51.001">Typing password into text field 'css:#login-password'</msg>
-<status endtime="20231027 02:26:51.003" starttime="20231027 02:26:50.865" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:23.055">Typing password into text field 'css:#login-password'</msg>
+<status endtime="20231028 20:31:23.056" starttime="20231028 20:31:22.922" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:#login-form &gt; div.position-relative &gt; button</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:26:52.874">Clicking element 'css:#login-form &gt; div.position-relative &gt; button'.</msg>
-<status endtime="20231027 02:26:52.875" starttime="20231027 02:26:51.005" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:25.184">Clicking element 'css:#login-form &gt; div.position-relative &gt; button'.</msg>
+<status endtime="20231028 20:31:25.185" starttime="20231028 20:31:23.057" status="PASS"/>
 </kw>
 <doc>Input password</doc>
-<status endtime="20231027 02:26:52.876" starttime="20231027 02:26:50.801" status="PASS"/>
+<status endtime="20231028 20:31:25.187" starttime="20231028 20:31:22.875" status="PASS"/>
 </test>
 <test name="Click Submit a new application" id="s1-s1-t6">
 <kw library="BuiltIn" name="Wait Until Keyword Succeeds">
@@ -132,18 +144,18 @@
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; a</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:26:52.922">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; a' is visible.</msg>
-<status endtime="20231027 02:26:52.923" starttime="20231027 02:26:52.886" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:25.236">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; a' is visible.</msg>
+<status endtime="20231028 20:31:25.237" starttime="20231028 20:31:25.195" status="PASS"/>
 </kw>
-<status endtime="20231027 02:26:52.923" starttime="20231027 02:26:52.883" status="PASS"/>
+<status endtime="20231028 20:31:25.237" starttime="20231028 20:31:25.192" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; a</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:26:56.543">Clicking element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; a'.</msg>
-<status endtime="20231027 02:26:56.545" starttime="20231027 02:26:52.924" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:28.685">Clicking element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; a'.</msg>
+<status endtime="20231028 20:31:28.686" starttime="20231028 20:31:25.238" status="PASS"/>
 </kw>
-<status endtime="20231027 02:26:56.547" starttime="20231027 02:26:52.879" status="PASS"/>
+<status endtime="20231028 20:31:28.687" starttime="20231028 20:31:25.189" status="PASS"/>
 </test>
 <test name="Check if Continue with the submission of the application is present else click Submit a New Application" id="s1-s1-t7">
 <kw library="BuiltIn" name="Wait Until Keyword Succeeds">
@@ -155,30 +167,30 @@
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; div &gt; a</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:26:56.597">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; div &gt; a' is visible.</msg>
-<status endtime="20231027 02:26:56.598" starttime="20231027 02:26:56.558" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:28.736">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; div &gt; a' is visible.</msg>
+<status endtime="20231028 20:31:28.737" starttime="20231028 20:31:28.696" status="PASS"/>
 </kw>
-<status endtime="20231027 02:26:56.599" starttime="20231027 02:26:56.555" status="PASS"/>
+<status endtime="20231028 20:31:28.737" starttime="20231028 20:31:28.692" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Wait Until Page Contains Element">
 <arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; div &gt; a</arg>
 <arg>timeout=30s</arg>
 <doc>Waits until the element identified by ``locator`` is found on the current page.</doc>
-<status endtime="20231027 02:26:56.632" starttime="20231027 02:26:56.600" status="PASS"/>
+<status endtime="20231028 20:31:28.770" starttime="20231028 20:31:28.738" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Set Variable">
 <var>${first_selector}</var>
 <arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; ul &gt; li:nth-child(1) &gt; a</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg level="INFO" timestamp="20231027 02:26:56.643">${first_selector} = css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; ul &gt; li:nth-child(1) &gt; a</msg>
-<status endtime="20231027 02:26:56.644" starttime="20231027 02:26:56.633" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:28.779">${first_selector} = css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; ul &gt; li:nth-child(1) &gt; a</msg>
+<status endtime="20231028 20:31:28.780" starttime="20231028 20:31:28.772" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Set Variable">
 <var>${second_selector}</var>
 <arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; div &gt; a</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg level="INFO" timestamp="20231027 02:26:56.654">${second_selector} = css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; div &gt; a</msg>
-<status endtime="20231027 02:26:56.654" starttime="20231027 02:26:56.645" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:28.789">${second_selector} = css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; div &gt; a</msg>
+<status endtime="20231028 20:31:28.789" starttime="20231028 20:31:28.780" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Run Keyword And Return Status">
 <var>${element_present}</var>
@@ -188,11 +200,11 @@
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>${first_selector}</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:26:56.694">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; ul &gt; li:nth-child(1) &gt; a' is visible.</msg>
-<status endtime="20231027 02:26:56.695" starttime="20231027 02:26:56.657" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:28.828">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; ul &gt; li:nth-child(1) &gt; a' is visible.</msg>
+<status endtime="20231028 20:31:28.829" starttime="20231028 20:31:28.793" status="PASS"/>
 </kw>
-<msg level="INFO" timestamp="20231027 02:26:56.696">${element_present} = True</msg>
-<status endtime="20231027 02:26:56.696" starttime="20231027 02:26:56.655" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:28.830">${element_present} = True</msg>
+<status endtime="20231028 20:31:28.831" starttime="20231028 20:31:28.790" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Run Keyword If">
 <arg>${element_present}</arg>
@@ -202,48 +214,54 @@
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>${first_selector}</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:03.701">Clicking element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; ul &gt; li:nth-child(1) &gt; a'.</msg>
-<status endtime="20231027 02:27:03.703" starttime="20231027 02:26:56.701" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:33.367">Clicking element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; section &gt; ul &gt; li:nth-child(1) &gt; a'.</msg>
+<status endtime="20231028 20:31:33.368" starttime="20231028 20:31:28.835" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:03.703" starttime="20231027 02:26:56.698" status="PASS"/>
+<status endtime="20231028 20:31:33.368" starttime="20231028 20:31:28.832" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Run Keyword Unless">
 <arg>${element_present}</arg>
 <arg>Click Element</arg>
 <arg>${second_selector}</arg>
 <doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
-<status endtime="20231027 02:27:03.707" starttime="20231027 02:27:03.704" status="PASS"/>
+<status endtime="20231028 20:31:33.371" starttime="20231028 20:31:33.369" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:03.708" starttime="20231027 02:26:56.552" status="PASS"/>
+<status endtime="20231028 20:31:33.372" starttime="20231028 20:31:28.689" status="PASS"/>
 </test>
 <test name="Fill out the form" id="s1-s1-t8">
+<kw library="BuiltIn" name="Sleep">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg level="INFO" timestamp="20231028 20:31:35.387">Slept 2 seconds</msg>
+<status endtime="20231028 20:31:35.389" starttime="20231028 20:31:33.378" status="PASS"/>
+</kw>
 <kw library="SeleniumLibrary" name="Get Text">
 <var>${first_name}</var>
 <arg>css:[aria-label='First name']</arg>
 <doc>Returns the text of the element identified by ``locator``..</doc>
-<msg level="INFO" timestamp="20231027 02:27:03.752">${first_name} = </msg>
-<status endtime="20231027 02:27:03.753" starttime="20231027 02:27:03.717" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:35.431">${first_name} = </msg>
+<status endtime="20231028 20:31:35.431" starttime="20231028 20:31:35.390" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Get Text">
 <var>${last_name}</var>
 <arg>css:[aria-label='Last name']</arg>
 <doc>Returns the text of the element identified by ``locator``..</doc>
-<msg level="INFO" timestamp="20231027 02:27:03.784">${last_name} = </msg>
-<status endtime="20231027 02:27:03.785" starttime="20231027 02:27:03.754" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:35.462">${last_name} = </msg>
+<status endtime="20231028 20:31:35.463" starttime="20231028 20:31:35.432" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Get Text">
 <var>${unithousestreet}</var>
 <arg>css:[aria-label='Unit no/House no, Street']</arg>
 <doc>Returns the text of the element identified by ``locator``..</doc>
-<msg level="INFO" timestamp="20231027 02:27:03.817">${unithousestreet} = B20 L2 Moringa St. Brgy. Quezon City</msg>
-<status endtime="20231027 02:27:03.817" starttime="20231027 02:27:03.785" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:35.495">${unithousestreet} = </msg>
+<status endtime="20231028 20:31:35.496" starttime="20231028 20:31:35.463" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Get Text">
 <var>${postalcode}</var>
 <arg>css:.ui-autocomplete-input</arg>
 <doc>Returns the text of the element identified by ``locator``..</doc>
-<msg level="INFO" timestamp="20231027 02:27:03.849">${postalcode} = </msg>
-<status endtime="20231027 02:27:03.850" starttime="20231027 02:27:03.818" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:35.529">${postalcode} = </msg>
+<status endtime="20231028 20:31:35.530" starttime="20231028 20:31:35.497" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Run Keyword Unless">
 <arg>'${first_name}'</arg>
@@ -255,10 +273,10 @@
 <arg>css:[aria-label='First name']</arg>
 <arg>first_name</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:04.009">Typing text 'first_name' into text field 'css:[aria-label='First name']'</msg>
-<status endtime="20231027 02:27:04.010" starttime="20231027 02:27:03.857" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:35.681">Typing text 'first_name' into text field 'css:[aria-label='First name']'</msg>
+<status endtime="20231028 20:31:35.682" starttime="20231028 20:31:35.535" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:04.011" starttime="20231027 02:27:03.851" status="PASS"/>
+<status endtime="20231028 20:31:35.683" starttime="20231028 20:31:35.530" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Run Keyword Unless">
 <arg>'${last_name}'</arg>
@@ -270,10 +288,10 @@
 <arg>css:[aria-label='Last name']</arg>
 <arg>last_name</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:04.145">Typing text 'last_name' into text field 'css:[aria-label='Last name']'</msg>
-<status endtime="20231027 02:27:04.146" starttime="20231027 02:27:04.016" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:35.809">Typing text 'last_name' into text field 'css:[aria-label='Last name']'</msg>
+<status endtime="20231028 20:31:35.810" starttime="20231028 20:31:35.688" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:04.147" starttime="20231027 02:27:04.011" status="PASS"/>
+<status endtime="20231028 20:31:35.810" starttime="20231028 20:31:35.684" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Run Keyword Unless">
 <arg>'${unithousestreet}'</arg>
@@ -281,7 +299,14 @@
 <arg>css:[aria-label='Unit no/House no, Street']</arg>
 <arg>unithousestreet</arg>
 <doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
-<status endtime="20231027 02:27:04.154" starttime="20231027 02:27:04.148" status="PASS"/>
+<kw library="SeleniumLibrary" name="Input Text">
+<arg>css:[aria-label='Unit no/House no, Street']</arg>
+<arg>unithousestreet</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg level="INFO" timestamp="20231028 20:31:35.922">Typing text 'unithousestreet' into text field 'css:[aria-label='Unit no/House no, Street']'</msg>
+<status endtime="20231028 20:31:35.923" starttime="20231028 20:31:35.815" status="PASS"/>
+</kw>
+<status endtime="20231028 20:31:35.923" starttime="20231028 20:31:35.811" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Run Keyword Unless">
 <arg>'${postalcode}'</arg>
@@ -293,10 +318,10 @@
 <arg>css:.ui-autocomplete-input</arg>
 <arg>1000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:04.288">Typing text '1000' into text field 'css:.ui-autocomplete-input'</msg>
-<status endtime="20231027 02:27:04.289" starttime="20231027 02:27:04.160" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:36.035">Typing text '1000' into text field 'css:.ui-autocomplete-input'</msg>
+<status endtime="20231028 20:31:36.036" starttime="20231028 20:31:35.927" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:04.289" starttime="20231027 02:27:04.156" status="PASS"/>
+<status endtime="20231028 20:31:36.037" starttime="20231028 20:31:35.924" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Wait Until Keyword Succeeds">
 <arg>10s</arg>
@@ -307,239 +332,254 @@
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:.ui-corner-all[tabindex='-1']</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:27:04.319">Verifying element 'css:.ui-corner-all[tabindex='-1']' is visible.</msg>
-<msg level="FAIL" timestamp="20231027 02:27:04.352">NONE</msg>
-<status endtime="20231027 02:27:04.353" starttime="20231027 02:27:04.292" status="FAIL"/>
+<msg level="INFO" timestamp="20231028 20:31:36.062">Verifying element 'css:.ui-corner-all[tabindex='-1']' is visible.</msg>
+<msg level="FAIL" timestamp="20231028 20:31:36.095">NONE</msg>
+<status endtime="20231028 20:31:36.095" starttime="20231028 20:31:36.040" status="FAIL"/>
 </kw>
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:.ui-corner-all[tabindex='-1']</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:27:05.401">Verifying element 'css:.ui-corner-all[tabindex='-1']' is visible.</msg>
-<status endtime="20231027 02:27:05.401" starttime="20231027 02:27:05.353" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:37.127">Verifying element 'css:.ui-corner-all[tabindex='-1']' is visible.</msg>
+<status endtime="20231028 20:31:37.128" starttime="20231028 20:31:37.096" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:05.402" starttime="20231027 02:27:04.290" status="PASS"/>
+<status endtime="20231028 20:31:37.128" starttime="20231028 20:31:36.037" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:.ui-corner-all[tabindex='-1']</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:05.463">Clicking element 'css:.ui-corner-all[tabindex='-1']'.</msg>
-<status endtime="20231027 02:27:05.464" starttime="20231027 02:27:05.402" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:37.188">Clicking element 'css:.ui-corner-all[tabindex='-1']'.</msg>
+<status endtime="20231028 20:31:37.189" starttime="20231028 20:31:37.129" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:05.465" starttime="20231027 02:27:03.712" status="PASS"/>
+<status endtime="20231028 20:31:37.190" starttime="20231028 20:31:33.375" status="PASS"/>
 </test>
-<test name="Select Photo" id="s1-s1-t9">
-<kw library="SeleniumLibrary" name="Execute Javascript">
-<arg>document.getElementById('.ui-autocomplete-input').scrollIntoView(true)</arg>
-<doc>Execute the given JavaScript ``code``.</doc>
-<msg level="INFO" html="true" timestamp="20231027 02:27:05.501">Executing JavaScript:
-document.getElementById('.ui-autocomplete-input').scrollIntoView(true)</msg>
-<msg level="FAIL" timestamp="20231027 02:27:05.519">javascript error: Cannot read properties of null (reading 'scrollIntoView')
-  (Session info: chrome=118.0.5993.90)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [495a9a508170edabfedea26d7de2a209, executeScript {script=document.getElementById('.ui-autocomplete-input').scrollIntoView(true), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 495a9a508170edabfedea26d7de2a209</msg>
-<status endtime="20231027 02:27:05.520" starttime="20231027 02:27:05.470" status="FAIL"/>
+<test name="Select Country" id="s1-s1-t9">
+<kw library="SeleniumLibrary" name="Select From List By Value">
+<arg>css:.locationCountry</arg>
+<arg>US</arg>
+<doc>Select the given ``*values`` of the multi-select list identified by ``locator``.</doc>
+<msg level="INFO" timestamp="20231028 20:31:37.321">Selecting value(s) 'US' from list 'css:.locationCountry'.</msg>
+<status endtime="20231028 20:31:37.322" starttime="20231028 20:31:37.195" status="PASS"/>
 </kw>
-<kw library="BuiltIn" name="Sleep">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status endtime="20231027 02:27:05.523" starttime="20231027 02:27:05.523" status="NOT RUN"/>
+<status endtime="20231028 20:31:37.323" starttime="20231028 20:31:37.192" status="PASS"/>
+</test>
+<test name="Select Photo" id="s1-s1-t10">
+<kw library="BuiltIn" name="Set Variable">
+<var>${file_path}</var>
+<arg>C:\\Users\\Jonathan\\robotframework\\optimy\\src\\test\\robotframework\\acceptance/app-form-photo.png</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg level="INFO" timestamp="20231028 20:31:37.336">${file_path} = C:\Users\Jonathan\robotframework\optimy\src\test\robotframework\acceptance/app-form-photo.png</msg>
+<status endtime="20231028 20:31:37.337" starttime="20231028 20:31:37.328" status="PASS"/>
 </kw>
-<kw library="BuiltIn" name="Wait Until Keyword Succeeds">
-<arg>10s</arg>
-<arg>1s</arg>
-<arg>Element Should Be Visible</arg>
-<arg>css:#upload_d370f504-7ff5-509f-babb-d80126387290 &gt; div &gt; div &gt; div.p-4.qq-uploader-selector__wrapper.text-center &gt; div.btn.btn-outline-primary.qq-upload-button-selector.qq-upload-button-hover &gt; span</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status endtime="20231027 02:27:05.525" starttime="20231027 02:27:05.524" status="NOT RUN"/>
-</kw>
-<kw library="SeleniumLibrary" name="Click Element">
-<arg>css:#upload_d370f504-7ff5-509f-babb-d80126387290 &gt; div &gt; div &gt; div.p-4.qq-uploader-selector__wrapper.text-center &gt; div.btn.btn-outline-primary.qq-upload-button-selector.qq-upload-button-hover &gt; span</arg>
-<doc>Click on the element identified by ``locator``.</doc>
-<status endtime="20231027 02:27:05.527" starttime="20231027 02:27:05.526" status="NOT RUN"/>
+<kw library="SeleniumLibrary" name="Wait Until Page Contains Element">
+<arg>${UploadFile}</arg>
+<arg>60s</arg>
+<doc>Waits until the element identified by ``locator`` is found on the current page.</doc>
+<status endtime="20231028 20:31:37.364" starttime="20231028 20:31:37.337" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Choose File">
-<arg>css:input[type=file]</arg>
-<arg>C:\\Users\\Jonathan\\robotframework\\optimy\\src\\test\\robotframework\\acceptance/optimy/src/test/resources/robotframework/app-form-photo.png</arg>
+<arg>${UploadFile}</arg>
+<arg>${file_path}</arg>
 <doc>Types the given ``filePath`` into the input field identified by ``locator``.</doc>
-<status endtime="20231027 02:27:05.528" starttime="20231027 02:27:05.527" status="NOT RUN"/>
+<status endtime="20231028 20:31:37.428" starttime="20231028 20:31:37.365" status="PASS"/>
 </kw>
 <kw library="BuiltIn" name="Sleep">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status endtime="20231027 02:27:05.529" starttime="20231027 02:27:05.529" status="NOT RUN"/>
+<msg level="INFO" timestamp="20231028 20:31:42.437">Slept 5 seconds</msg>
+<status endtime="20231028 20:31:42.439" starttime="20231028 20:31:37.429" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:05.537" starttime="20231027 02:27:05.467" status="FAIL">javascript error: Cannot read properties of null (reading 'scrollIntoView')
-  (Session info: chrome=118.0.5993.90)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [495a9a508170edabfedea26d7de2a209, executeScript {script=document.getElementById('.ui-autocomplete-input').scrollIntoView(true), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 495a9a508170edabfedea26d7de2a209</status>
+<status endtime="20231028 20:31:42.441" starttime="20231028 20:31:37.325" status="PASS"/>
 </test>
-<test name="Select Gender" id="s1-s1-t10">
+<test name="Select Gender" id="s1-s1-t11">
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:[for='f3fa11a5-a516-5cec-9025-b940b1b113d0'] .custom-control-label</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:05.618">Clicking element 'css:[for='f3fa11a5-a516-5cec-9025-b940b1b113d0'] .custom-control-label'.</msg>
-<status endtime="20231027 02:27:05.619" starttime="20231027 02:27:05.543" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:42.526">Clicking element 'css:[for='f3fa11a5-a516-5cec-9025-b940b1b113d0'] .custom-control-label'.</msg>
+<status endtime="20231028 20:31:42.527" starttime="20231028 20:31:42.448" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:05.620" starttime="20231027 02:27:05.540" status="PASS"/>
+<status endtime="20231028 20:31:42.528" starttime="20231028 20:31:42.445" status="PASS"/>
 </test>
-<test name="Select Role" id="s1-s1-t11">
-<kw library="SeleniumLibrary" name="Click Element">
-<arg>css:[aria-label='Select a role you\'re applying for']</arg>
-<doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:05.665">Clicking element 'css:[aria-label='Select a role you're applying for']'.</msg>
-<msg level="FAIL" timestamp="20231027 02:27:05.687">invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=118.0.5993.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [495a9a508170edabfedea26d7de2a209, findElements {using=css selector, value=[aria-label='Select a role you're applying for']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 495a9a508170edabfedea26d7de2a209</msg>
-<status endtime="20231027 02:27:05.688" starttime="20231027 02:27:05.625" status="FAIL"/>
-</kw>
+<test name="Select Role" id="s1-s1-t12">
 <kw library="SeleniumLibrary" name="Select From List By Value">
 <arg>css:#field_f801d7d8-0762-5407-95f9-b8c3a793157c</arg>
 <arg>186e6ddf-1e72-552b-a25d-db41ae022f0b</arg>
 <doc>Select the given ``*values`` of the multi-select list identified by ``locator``.</doc>
-<status endtime="20231027 02:27:05.690" starttime="20231027 02:27:05.690" status="NOT RUN"/>
+<msg level="INFO" timestamp="20231028 20:31:42.678">Selecting value(s) '186e6ddf-1e72-552b-a25d-db41ae022f0b' from list 'css:#field_f801d7d8-0762-5407-95f9-b8c3a793157c'.</msg>
+<status endtime="20231028 20:31:42.679" starttime="20231028 20:31:42.534" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:05.701" starttime="20231027 02:27:05.623" status="FAIL">invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=118.0.5993.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [495a9a508170edabfedea26d7de2a209, findElements {using=css selector, value=[aria-label='Select a role you're applying for']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 495a9a508170edabfedea26d7de2a209</status>
+<status endtime="20231028 20:31:42.682" starttime="20231028 20:31:42.531" status="PASS"/>
 </test>
-<test name="Tick Checkbox" id="s1-s1-t12">
-<kw library="SeleniumLibrary" name="Click Element">
+<test name="Tick Checkbox" id="s1-s1-t13">
+<kw library="BuiltIn" name="Run Keyword And Return Status">
+<var>${is_checked}</var>
+<arg>Get Element Attribute</arg>
 <arg>css:[for='773e5289-f4b3-5d6d-ac81-5c99e2b39acd'] .custom-control-label</arg>
-<doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:05.808">Clicking element 'css:[for='773e5289-f4b3-5d6d-ac81-5c99e2b39acd'] .custom-control-label'.</msg>
-<status endtime="20231027 02:27:05.808" starttime="20231027 02:27:05.709" status="PASS"/>
+<arg>checked</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw library="SeleniumLibrary" name="Get Element Attribute">
+<arg>css:[for='773e5289-f4b3-5d6d-ac81-5c99e2b39acd'] .custom-control-label</arg>
+<arg>checked</arg>
+<doc>Returns value of attribute from element locator.</doc>
+<status endtime="20231028 20:31:42.751" starttime="20231028 20:31:42.693" status="PASS"/>
+</kw>
+<msg level="INFO" timestamp="20231028 20:31:42.752">${is_checked} = True</msg>
+<status endtime="20231028 20:31:42.752" starttime="20231028 20:31:42.690" status="PASS"/>
+</kw>
+<kw library="BuiltIn" name="Run Keyword Unless">
+<arg>${is_checked}</arg>
+<arg>Click Element</arg>
+<arg>css:[for='773e5289-f4b3-5d6d-ac81-5c99e2b39acd'] .custom-control-label</arg>
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<status endtime="20231028 20:31:42.756" starttime="20231028 20:31:42.753" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:[for='3fe36edc-80b0-5574-b7ad-7cfe074acfc1'] .custom-control-label</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:05.890">Clicking element 'css:[for='3fe36edc-80b0-5574-b7ad-7cfe074acfc1'] .custom-control-label'.</msg>
-<status endtime="20231027 02:27:05.891" starttime="20231027 02:27:05.809" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:42.823">Clicking element 'css:[for='3fe36edc-80b0-5574-b7ad-7cfe074acfc1'] .custom-control-label'.</msg>
+<status endtime="20231028 20:31:42.824" starttime="20231028 20:31:42.757" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:[for='5ab6a927-7b72-5869-acc3-0db0858bc495'] .custom-control-label</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:05.959">Clicking element 'css:[for='5ab6a927-7b72-5869-acc3-0db0858bc495'] .custom-control-label'.</msg>
-<status endtime="20231027 02:27:05.959" starttime="20231027 02:27:05.891" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:42.902">Clicking element 'css:[for='5ab6a927-7b72-5869-acc3-0db0858bc495'] .custom-control-label'.</msg>
+<status endtime="20231028 20:31:42.903" starttime="20231028 20:31:42.824" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:[for='36c255b7-8d7c-50b9-8e75-b2ae9a57185b'] .custom-control-label</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:06.031">Clicking element 'css:[for='36c255b7-8d7c-50b9-8e75-b2ae9a57185b'] .custom-control-label'.</msg>
-<status endtime="20231027 02:27:06.032" starttime="20231027 02:27:05.960" status="PASS"/>
-</kw>
-<kw library="SeleniumLibrary" name="Execute Javascript">
-<arg>document.getElementById('[for='9bbcf3da-3757-5bf3-92cf-ac4694653f45'] .custom-control-label').scrollIntoView(true)</arg>
-<doc>Execute the given JavaScript ``code``.</doc>
-<msg level="INFO" html="true" timestamp="20231027 02:27:06.051">Executing JavaScript:
-document.getElementById('[for='9bbcf3da-3757-5bf3-92cf-ac4694653f45'] .custom-control-label').scrollIntoView(true)</msg>
-<msg level="FAIL" timestamp="20231027 02:27:06.069">javascript error: missing ) after argument list
-  (Session info: chrome=118.0.5993.90)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [495a9a508170edabfedea26d7de2a209, executeScript {script=document.getElementById('[for='9bbcf3da-3757-5bf3-92cf-ac4694653f45'] .custom-control-label').scrollIntoView(true), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 495a9a508170edabfedea26d7de2a209</msg>
-<status endtime="20231027 02:27:06.070" starttime="20231027 02:27:06.032" status="FAIL"/>
+<msg level="INFO" timestamp="20231028 20:31:42.983">Clicking element 'css:[for='36c255b7-8d7c-50b9-8e75-b2ae9a57185b'] .custom-control-label'.</msg>
+<status endtime="20231028 20:31:42.984" starttime="20231028 20:31:42.903" status="PASS"/>
 </kw>
 <kw library="SeleniumLibrary" name="Click Element">
 <arg>css:[for='9bbcf3da-3757-5bf3-92cf-ac4694653f45'] .custom-control-label</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<status endtime="20231027 02:27:06.072" starttime="20231027 02:27:06.071" status="NOT RUN"/>
+<msg level="INFO" timestamp="20231028 20:31:43.051">Clicking element 'css:[for='9bbcf3da-3757-5bf3-92cf-ac4694653f45'] .custom-control-label'.</msg>
+<status endtime="20231028 20:31:43.052" starttime="20231028 20:31:42.984" status="PASS"/>
 </kw>
-<kw name="[for='9bbcf3da-3757-5bf3-92cf-ac4694653f45'] .custom-control-label">
-<status endtime="20231027 02:27:06.095" starttime="20231027 02:27:06.094" status="NOT RUN"/>
-</kw>
-<status endtime="20231027 02:27:06.104" starttime="20231027 02:27:05.705" status="FAIL">javascript error: missing ) after argument list
-  (Session info: chrome=118.0.5993.90)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [495a9a508170edabfedea26d7de2a209, executeScript {script=document.getElementById('[for='9bbcf3da-3757-5bf3-92cf-ac4694653f45'] .custom-control-label').scrollIntoView(true), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 495a9a508170edabfedea26d7de2a209</status>
+<status endtime="20231028 20:31:43.053" starttime="20231028 20:31:42.686" status="PASS"/>
 </test>
-<test name="Fill out objectives" id="s1-s1-t13">
-<kw library="SeleniumLibrary" name="Get Text">
-<var>${objective}</var>
-<arg>css:[aria-label='Editor, 91296806-02e6-5bb5-bac0-deb4cbf64a64::42b16795-740d-5d97-b972-a3643510eb01']</arg>
-<doc>Returns the text of the element identified by ``locator``..</doc>
-<msg level="FAIL" timestamp="20231027 02:27:06.161">Element locator 'css:[aria-label='Editor, 91296806-02e6-5bb5-bac0-deb4cbf64a64::42b16795-740d-5d97-b972-a3643510eb01']' did not match any elements.</msg>
-<status endtime="20231027 02:27:06.162" starttime="20231027 02:27:06.114" status="FAIL"/>
+<test name="Fill out objectives" id="s1-s1-t14">
+<kw library="SeleniumLibrary" name="Execute Javascript">
+<arg>window.scrollBy(0,1000)</arg>
+<doc>Execute the given JavaScript ``code``.</doc>
+<msg level="INFO" html="true" timestamp="20231028 20:31:43.072">Executing JavaScript:
+window.scrollBy(0,1000)</msg>
+<status endtime="20231028 20:31:43.073" starttime="20231028 20:31:43.057" status="PASS"/>
 </kw>
-<kw library="BuiltIn" name="Run Keyword Unless">
-<arg>'${objective}'</arg>
-<arg>Input Text</arg>
-<arg>css:[aria-label='Editor, 91296806-02e6-5bb5-bac0-deb4cbf64a64::42b16795-740d-5d97-b972-a3643510eb01']</arg>
-<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
-<status endtime="20231027 02:27:06.165" starttime="20231027 02:27:06.164" status="NOT RUN"/>
+<kw library="SeleniumLibrary" name="Select Frame">
+<arg>css:[title='Editor, 91296806-02e6-5bb5-bac0-deb4cbf64a64::42b16795-740d-5d97-b972-a3643510eb01']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg level="INFO" timestamp="20231028 20:31:43.124">Selecting frame 'css:[title='Editor, 91296806-02e6-5bb5-bac0-deb4cbf64a64::42b16795-740d-5d97-b972-a3643510eb01']'.</msg>
+<status endtime="20231028 20:31:43.125" starttime="20231028 20:31:43.073" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:06.171" starttime="20231027 02:27:06.110" status="FAIL">Element locator 'css:[aria-label='Editor, 91296806-02e6-5bb5-bac0-deb4cbf64a64::42b16795-740d-5d97-b972-a3643510eb01']' did not match any elements.</status>
+<kw library="SeleniumLibrary" name="Input Text">
+<arg>css:[role='textbox']</arg>
+<arg>This is my objective</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg level="INFO" timestamp="20231028 20:31:43.285">Typing text 'This is my objective' into text field 'css:[role='textbox']'</msg>
+<status endtime="20231028 20:31:43.286" starttime="20231028 20:31:43.126" status="PASS"/>
+</kw>
+<kw library="SeleniumLibrary" name="Press Key">
+<arg>css:[role='textbox']</arg>
+<arg>\\9</arg>
+<doc>Simulates pressing key on the element identified by ``locator``.</doc>
+<status endtime="20231028 20:31:43.357" starttime="20231028 20:31:43.287" status="PASS"/>
+</kw>
+<kw library="SeleniumLibrary" name="Unselect Frame">
+<doc>Selects the top frame as the current frame.</doc>
+<status endtime="20231028 20:31:43.363" starttime="20231028 20:31:43.357" status="PASS"/>
+</kw>
+<status endtime="20231028 20:31:43.364" starttime="20231028 20:31:43.055" status="PASS"/>
 </test>
-<test name="Click Next" id="s1-s1-t14">
+<test name="Click Next" id="s1-s1-t15">
 <kw library="SeleniumLibrary" name="Click Element">
-<arg>css:#navButtonNext</arg>
+<arg>css:[id='navButtonNext']</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:06.269">Clicking element 'css:#navButtonNext'.</msg>
-<status endtime="20231027 02:27:06.270" starttime="20231027 02:27:06.176" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:43.450">Clicking element 'css:[id='navButtonNext']'.</msg>
+<status endtime="20231028 20:31:43.452" starttime="20231028 20:31:43.370" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:06.272" starttime="20231027 02:27:06.174" status="PASS"/>
+<status endtime="20231028 20:31:43.453" starttime="20231028 20:31:43.367" status="PASS"/>
 </test>
-<test name="Validate and Send" id="s1-s1-t15">
+<test name="Validate and Send" id="s1-s1-t16">
+<kw library="BuiltIn" name="Sleep">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg level="INFO" timestamp="20231028 20:31:48.468">Slept 5 seconds</msg>
+<status endtime="20231028 20:31:48.470" starttime="20231028 20:31:43.457" status="PASS"/>
+</kw>
+<kw library="SeleniumLibrary" name="Execute Javascript">
+<arg>window.scrollBy(0,1000)</arg>
+<doc>Execute the given JavaScript ``code``.</doc>
+<msg level="INFO" html="true" timestamp="20231028 20:31:51.538">Executing JavaScript:
+window.scrollBy(0,1000)</msg>
+<status endtime="20231028 20:31:51.539" starttime="20231028 20:31:48.471" status="PASS"/>
+</kw>
+<kw library="BuiltIn" name="Wait Until Keyword Succeeds">
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Element Should Be Visible</arg>
+<arg>css:[id='submitButton'][class='btn btn-primary ml-md-auto'][type='submit']</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<arg>css:[id='submitButton'][class='btn btn-primary ml-md-auto'][type='submit']</arg>
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<msg level="INFO" timestamp="20231028 20:31:51.576">Verifying element 'css:[id='submitButton'][class='btn btn-primary ml-md-auto'][type='submit']' is visible.</msg>
+<status endtime="20231028 20:31:51.577" starttime="20231028 20:31:51.542" status="PASS"/>
+</kw>
+<status endtime="20231028 20:31:51.577" starttime="20231028 20:31:51.540" status="PASS"/>
+</kw>
 <kw library="SeleniumLibrary" name="Click Element">
-<arg>css:#projectForm &gt; div.stepper.mb-4 &gt; div.card.stepper__item.stepper__item--active &gt; div.mt-4.mb-2.mt-md-0.card-footer.d-none.d-md-flex.justify-content-between.align-items-center &gt; div.d-none.d-md-flex.justify-content-between.align-items-center</arg>
+<arg>css:[id='submitButton'][class='btn btn-primary ml-md-auto'][type='submit']</arg>
 <doc>Click on the element identified by ``locator``.</doc>
-<msg level="INFO" timestamp="20231027 02:27:06.354">Clicking element 'css:#projectForm &gt; div.stepper.mb-4 &gt; div.card.stepper__item.stepper__item--active &gt; div.mt-4.mb-2.mt-md-0.card-footer.d-none.d-md-flex.justify-content-between.align-items-center &gt; div.d-none.d-md-flex.justify-content-between.align-items-center'.</msg>
-<status endtime="20231027 02:27:06.355" starttime="20231027 02:27:06.276" status="PASS"/>
+<msg level="INFO" timestamp="20231028 20:31:51.635">Clicking element 'css:[id='submitButton'][class='btn btn-primary ml-md-auto'][type='submit']'.</msg>
+<status endtime="20231028 20:31:51.636" starttime="20231028 20:31:51.578" status="PASS"/>
 </kw>
-<status endtime="20231027 02:27:06.356" starttime="20231027 02:27:06.274" status="PASS"/>
+<status endtime="20231028 20:31:51.636" starttime="20231028 20:31:43.455" status="PASS"/>
 </test>
-<test name="Thank you page" id="s1-s1-t16">
+<test name="Thank you page" id="s1-s1-t17">
+<kw library="BuiltIn" name="Wait Until Keyword Succeeds">
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Element Should Be Visible</arg>
+<arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; div &gt; div.mb-4.text-center.text-success</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
 <kw library="SeleniumLibrary" name="Element Should Be Visible">
 <arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; div &gt; div.mb-4.text-center.text-success</arg>
 <doc>Verify the element identified by ``locator`` is visible.</doc>
-<msg level="INFO" timestamp="20231027 02:27:06.395">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; div &gt; div.mb-4.text-center.text-success' is visible.</msg>
-<msg level="FAIL" timestamp="20231027 02:27:06.415">NONE</msg>
-<status endtime="20231027 02:27:06.416" starttime="20231027 02:27:06.363" status="FAIL"/>
+<msg level="INFO" timestamp="20231028 20:31:51.669">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; div &gt; div.mb-4.text-center.text-success' is visible.</msg>
+<msg level="FAIL" timestamp="20231028 20:31:51.690">NONE</msg>
+<status endtime="20231028 20:31:51.690" starttime="20231028 20:31:51.643" status="FAIL"/>
 </kw>
-<status endtime="20231027 02:27:06.426" starttime="20231027 02:27:06.359" status="FAIL">NONE</status>
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<arg>css:#content &gt; div &gt; div &gt; div &gt; div &gt; div &gt; div.mb-4.text-center.text-success</arg>
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<msg level="INFO" timestamp="20231028 20:31:53.975">Verifying element 'css:#content &gt; div &gt; div &gt; div &gt; div &gt; div &gt; div.mb-4.text-center.text-success' is visible.</msg>
+<status endtime="20231028 20:31:53.976" starttime="20231028 20:31:52.691" status="PASS"/>
+</kw>
+<status endtime="20231028 20:31:53.976" starttime="20231028 20:31:51.640" status="PASS"/>
+</kw>
+<kw library="SeleniumLibrary" name="Close Browser">
+<doc>Closes the current browser instance.</doc>
+<status endtime="20231028 20:31:54.146" starttime="20231028 20:31:53.976" status="PASS"/>
+</kw>
+<status endtime="20231028 20:31:54.148" starttime="20231028 20:31:51.638" status="PASS"/>
 </test>
-<status endtime="20231027 02:27:06.442" starttime="20231027 02:26:40.033" status="FAIL"/>
+<status endtime="20231028 20:31:54.160" starttime="20231028 20:31:08.398" status="PASS"/>
 </suite>
-<status endtime="20231027 02:27:06.481" starttime="20231027 02:26:39.624" status="FAIL"/>
+<status endtime="20231028 20:31:54.194" starttime="20231028 20:31:08.009" status="PASS"/>
 </suite>
 <statistics>
 <total>
-<stat pass="11" skip="0" fail="5">All Tests</stat>
+<stat pass="17" skip="0" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="11" skip="0" fail="5" name="Acceptance" id="s1">Acceptance</stat>
-<stat pass="11" skip="0" fail="5" name="Robot" id="s1-s1">Acceptance.Robot</stat>
+<stat pass="17" skip="0" fail="0" name="Acceptance" id="s1">Acceptance</stat>
+<stat pass="17" skip="0" fail="0" name="Robot" id="s1-s1">Acceptance.Robot</stat>
 </suite>
 </statistics>
 <errors>
-<msg level="WARN" timestamp="20231027 02:26:39.380">Command line option --xunitskipnoncritical has been deprecated and has no effect.</msg>
+<msg level="WARN" timestamp="20231028 20:31:07.767">Command line option --xunitskipnoncritical has been deprecated and has no effect.</msg>
 </errors>
 </robot>

@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="5" skipped="0" tests="16" name="Acceptance" time="26.857" errors="0">
-<testcase classname="Acceptance.Robot" name="Open Application" time="6.119">
+<testsuite failures="0" skipped="0" tests="17" name="Acceptance" time="46.185" errors="0">
+<testcase classname="Acceptance.Robot" name="Open Application" time="8.189">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Wait and click Accept Cookies" time="0.193">
+<testcase classname="Acceptance.Robot" name="Wait and click Accept Cookies" time="0.158">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Click Login button" time="3.696">
+<testcase classname="Acceptance.Robot" name="Click Login button" time="3.457">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Input e-mail address" time="0.259">
+<testcase classname="Acceptance.Robot" name="Input e-mail address" time="2.208">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Input password" time="2.075">
+<testcase classname="Acceptance.Robot" name="Input password" time="2.312">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Click Submit a new application" time="3.668">
+<testcase classname="Acceptance.Robot" name="Click Submit a new application" time="3.498">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Check if Continue with the submission of the application is present else click Submit a New Application" time="7.156">
+<testcase classname="Acceptance.Robot" name="Check if Continue with the submission of the application is present else click Submit a New Application" time="4.683">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Fill out the form" time="1.753">
+<testcase classname="Acceptance.Robot" name="Fill out the form" time="3.815">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Select Photo" time="0.070">
-<failure message="javascript error: Cannot read properties of null (reading 'scrollIntoView')&#10;  (Session info: chrome=118.0.5993.90)&#10;Build info: version: '4.14.1', revision: '03f8ede370'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [495a9a508170edabfedea26d7de2a209, executeScript {script=document.getElementById('.ui-autocomplete-input').scrollIntoView(true), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 495a9a508170edabfedea26d7de2a209" type="AssertionError"/>
+<testcase classname="Acceptance.Robot" name="Select Country" time="0.131">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Select Gender" time="0.080">
+<testcase classname="Acceptance.Robot" name="Select Photo" time="5.116">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Select Role" time="0.078">
-<failure message="invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=118.0.5993.90)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception&#10;Build info: version: '4.14.1', revision: '03f8ede370'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [495a9a508170edabfedea26d7de2a209, findElements {using=css selector, value=[aria-label='Select a role you're applying for']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 495a9a508170edabfedea26d7de2a209" type="AssertionError"/>
+<testcase classname="Acceptance.Robot" name="Select Gender" time="0.083">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Tick Checkbox" time="0.399">
-<failure message="javascript error: missing ) after argument list&#10;  (Session info: chrome=118.0.5993.90)&#10;Build info: version: '4.14.1', revision: '03f8ede370'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [495a9a508170edabfedea26d7de2a209, executeScript {script=document.getElementById('[for='9bbcf3da-3757-5bf3-92cf-ac4694653f45'] .custom-control-label').scrollIntoView(true), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Jonathan\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54168/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 495a9a508170edabfedea26d7de2a209" type="AssertionError"/>
+<testcase classname="Acceptance.Robot" name="Select Role" time="0.151">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Fill out objectives" time="0.061">
-<failure message="Element locator 'css:[aria-label='Editor, 91296806-02e6-5bb5-bac0-deb4cbf64a64::42b16795-740d-5d97-b972-a3643510eb01']' did not match any elements." type="AssertionError"/>
+<testcase classname="Acceptance.Robot" name="Tick Checkbox" time="0.367">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Click Next" time="0.098">
+<testcase classname="Acceptance.Robot" name="Fill out objectives" time="0.309">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Validate and Send" time="0.082">
+<testcase classname="Acceptance.Robot" name="Click Next" time="0.086">
 </testcase>
-<testcase classname="Acceptance.Robot" name="Thank you page" time="0.067">
-<failure message="NONE" type="AssertionError"/>
+<testcase classname="Acceptance.Robot" name="Validate and Send" time="8.181">
+</testcase>
+<testcase classname="Acceptance.Robot" name="Thank you page" time="2.510">
 </testcase>
 </testsuite>
